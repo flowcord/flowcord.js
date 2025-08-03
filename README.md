@@ -12,7 +12,7 @@
 
 ## 📦 Installation  
 ```bash
-npm install flowcord.js
+npm install @flowing/flowcord.js
 ```
 
 ## 🧪 Quick Start  
