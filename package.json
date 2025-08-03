@@ -1,0 +1,24 @@
+{
+  "name": "flowcord",
+  "version": "1.0.0",
+  "description": "**flowcord.js** is a next-generation Discord bot framework that combines the power of **discord.js** with an intuitive, flow-based approach. Designed for modern bot development, it offers both simplicity for beginners and advanced capabilities for experts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flowcord/flowcord.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/flowcord/flowcord.js/issues"
+  },
+  "homepage": "https://github.com/flowcord/flowcord.js#readme",
+  "dependencies": {
+    "discord.js": "^14.21.0"
+  }
+}
