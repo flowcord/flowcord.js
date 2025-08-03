@@ -57,10 +57,7 @@ client.login().catch(console.error);
 
 ## 🧩 Custom Functions  
 ```js
-client.functions.add({
-  name: "$hello",
-  execute: () => "Hello World!" 
-});
+Soon.
 ```
 
 ## 📚 Documentation  
