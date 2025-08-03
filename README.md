@@ -17,20 +17,34 @@ npm install @flowing/flowcord.js
 
 ## 🧪 Quick Start  
 ```js
-const { FlowClient } = require("flowcord.js");
+const { FlowClient } = require("@flowing/flowcord.js");
 
 const client = new FlowClient({
-  token: "YOUR_TOKEN",
-  prefix: "!",
-  intents: ["Guilds", "GuildMessages", "MessageContent"]
+token: "SEU_TOKEN_DO_DISCORD",
+prefix: "!",   
+intents: ["Guilds","GuildMessages","MessageContent"],
+events: ["onMessage"],
+database: { 
+        type: "flowcord.db",
+        db: require("@flowing/flowcord.db"),
+        dbType: "KeyValue",
+        tables: ["main"],
+        securityKey: "sua-chave-secreta-aqui-32-chars"
+    }
 });
 
 client.command({
-  name: "ping",
-  code: `Pong! Your ping is $pingms`
+    name: "ping",
+    code: `
+        $sendMessage[Pong! 🏓;true]
+        $wait[2s]
+        $editMessage[Pong! 🚀 Latência: $pingms]
+    `
 });
 
-client.login();
+client.loadCommands("./comandos");
+
+client.login().catch(console.error);
 ```
 
 ## 🛠 Built-in Functions  
