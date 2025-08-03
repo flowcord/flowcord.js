@@ -20,7 +20,7 @@ npm install @flowing/flowcord.js
 const { FlowClient } = require("@flowing/flowcord.js");
 
 const client = new FlowClient({
-token: "SEU_TOKEN_DO_DISCORD",
+token: "CLIENT_TOKEN",
 prefix: "!",   
 intents: ["Guilds","GuildMessages","MessageContent"],
 events: ["onMessage"],
